@@ -1,0 +1,25 @@
+if __name__ == '__main__':
+    i = 10
+    j = 20
+    if i > j:
+        print '%d 大于 %d' % (i,j)
+    elif i == j:
+        print '%d 等于 %d' % (i,j)
+    elif i < j:
+        print '%d 小于 %d' % (i,j)
+    else:
+        print '未知'
+###################
+if __name__ == '__main__':
+    from Tkinter import *
+ 
+    canvas = Canvas(width=800, height=600, bg='yellow')  
+    canvas.pack(expand=YES, fill=BOTH)                
+    k = 1
+    j = 1
+    for i in range(0,26):
+        canvas.create_oval(310 - k,250 - k,310 + k,250 + k, width=1)
+        k += j
+        j += 0.3
+ 
+    mainloop()
