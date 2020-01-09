@@ -1,0 +1,22 @@
+year = int(input("输入一个年份: "))
+if (year % 4) == 0:
+   if (year % 100) == 0:
+       if (year % 400) == 0:
+           print("{0} 是闰年".format(year))
+       else:
+           print("{0} 不是闰年".format(year))
+   else:
+       print("{0} 是闰年".format(year))       
+else:
+   print("{0} 不是闰年".format(year))
+   ########################
+girls=['alice','bernice','clarice']
+boys=['chris','arnold','bob']
+result=[boy+ '+' +girl for boy in boys for girl in girls if boy[0]==girl[0]]
+print(result)
+#####################
+coordinates=[]
+for x in range(0,10):
+    for y in range (0,10):
+        coordinates.append((x,y))
+print(coordinates)
